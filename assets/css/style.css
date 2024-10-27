@@ -1,0 +1,102 @@
+body {
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "aside section"
+    "footer footer";
+  grid-template-columns: 15% 85%;
+}
+
+.barra-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid #f69cc2 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  grid-area: nav;
+}
+
+.logotipo {
+  width: 400px;
+}
+
+.barra {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.barra-lateral {
+  padding-left: 25px;
+  grid-area: aside;
+}
+
+.titulo-barra-lat {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.categorias {
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.grid {
+  padding: 15px 15px 30px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: section;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-producto {
+  width: 300px;
+}
+
+.articulo {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.precio {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.boton-comprar {
+  outline: none;
+  background-color: #f2ae75;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #f69cc2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.txt-footer {
+  font-size: 18px;
+  color: white;
+}
