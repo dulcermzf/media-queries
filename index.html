@@ -3,67 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paper girl</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+    <title>Paper Girl</title>
+    <script
+      src="https://kit.fontawesome.com/fc1e903b39.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <main class="main">
-      <nav class="barra-nav">
-        <img class="logotipo" src="assets/images/logo.png" alt="logo" />
-      </nav>
-      <aside class="barra-lateral">
-        <p class="titulo-barra-lat">Categorías</p>
-        <p class="categorias">Plumones (25)</p>
-        <p class="categorias">Libretas (14)</p>
-        <p class="categorias">Stickers (33)</p>
-        <p class="categorias">Washitapes (18)</p>
-        <p class="categorias">Complementos (23)</p>
+    <main class="contenedor-principal">
+      <aside>
+        <div>
+          <img class="logo" src="assets/images/logo.png" alt="logo" />
+        </div>
+
+        <div class="icono-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <menu>
+          <p class="titulo-barra-lat">Categorías</p>
+          <p class="categorias">Plumones (25)</p>
+          <p class="categorias">Libretas (14)</p>
+          <p class="categorias">Stickers (33)</p>
+          <p class="categorias">Washitapes (18)</p>
+          <p class="categorias">Complementos (23)</p>
+        </menu>
       </aside>
-      <section class="grid">
-        <div class="tarjeta">
-          <img class="img-producto" src="assets/images/1.png" alt="1" />
-          <p class="articulo">Plumas Borrables My Melody</p>
-          <p class="precio">$90.00</p>
-          <button class="boton-comprar">Añadir al carrito</button>
+
+      <section class="contenedor-filtros">
+        <label for="filtro">Ordenar por:</label>
+        <select class="selector-filtro" name="filtro" id="filtro">
+          <option value="categoria">Categoria</option>
+          <option value="precio">Precio</option>
+        </select>
+      </section>
+
+      <section class="contenido-principal">
+        <div class="contenedor-tarjetas">
+          <div class="tarjeta-movil">
+            <img class="img-producto" src="assets/images/1.png" alt="1" />
+            <p class="articulo">Plumas Borrables My Melody</p>
+            <p class="precio">$90.00</p>
+            <button class="boton-comprar">Añadir al carrito</button>
+          </div>
+          <div class="tarjeta-escritorio">
+            <img class="img-producto" src="assets/images/1.png" alt="1" />
+            <p class="articulo">Plumas Borrables My Melody</p>
+            <p class="precio">$90.00</p>
+            <button class="boton-comprar">Añadir al carrito</button>
+          </div>
+          <div class="tarjeta-escritorio">
+            <img class="img-producto" src="assets/images/2.png" alt="2" />
+            <p class="articulo">Kit Garrita</p>
+            <p class="precio">$250.00</p>
+            <button class="boton-comprar">Añadir al carrito</button>
+          </div>
+          <div class="tarjeta-escritorio">
+            <img class="img-producto" src="assets/images/3.png" alt="3" />
+            <p class="articulo">Washitape Constelaciones con Foil</p>
+            <p class="precio">$95.00</p>
+            <button class="boton-comprar">Añadir al carrito</button>
+          </div>
+          <div class="tarjeta-escritorio">
+            <img class="img-producto" src="assets/images/4.png" alt="4" />
+            <p class="articulo">Goma Garrita Retráctil Pastel</p>
+            <p class="precio">$15.00</p>
+            <button class="boton-comprar">Añadir al carrito</button>
+          </div>
+          <div class="tarjeta-escritorio">
+            <img class="img-producto" src="assets/images/5.png" alt="5" />
+            <p class="articulo">Cartera Post It One Person</p>
+            <p class="precio">$95.00</p>
+            <button class="boton-comprar">Añadir al carrito</button>
+          </div>
+          <div class="tarjeta-escritorio">
+            <img class="img-producto" src="assets/images/6.png" alt="6" />
+            <p class="articulo">Libreta Cosida Hello Kitty</p>
+            <p class="precio">$110.00</p>
+            <button class="boton-comprar">Añadir al carrito</button>
+          </div>
         </div>
-        <div class="tarjeta">
-          <img class="img-producto" src="assets/images/2.png" alt="2" />
-          <p class="articulo">Kit Garrita</p>
-          <p class="precio">$250.00</p>
-          <button class="boton-comprar">Añadir al carrito</button>
-        </div>
-        <div class="tarjeta">
-          <img class="img-producto" src="assets/images/3.png" alt="3" />
-          <p class="articulo">Washitape Constelaciones con Foil</p>
-          <p class="precio">$95.00</p>
-          <button class="boton-comprar">Añadir al carrito</button>
-        </div>
-        <div class="tarjeta">
-          <img class="img-producto" src="assets/images/4.png" alt="4" />
-          <p class="articulo">Goma Garrita Retráctil Pastel</p>
-          <p class="precio">$15.00</p>
-          <button class="boton-comprar">Añadir al carrito</button>
-        </div>
-        <div class="tarjeta">
-          <img class="img-producto" src="assets/images/5.png" alt="5" />
-          <p class="articulo">Cartera Post It One Person</p>
-          <p class="precio">$95.00</p>
-          <button class="boton-comprar">Añadir al carrito</button>
-        </div>
-        <div class="tarjeta">
-          <img class="img-producto" src="assets/images/6.png" alt="6" />
-          <p class="articulo">Libreta Cosida Hello Kitty</p>
-          <p class="precio">$110.00</p>
-          <button class="boton-comprar">Añadir al carrito</button>
+
+        <div class="paginacion">
+          <a class="links-paginacion" href="#">&laquo;</a>
+          <a class="links-paginacion active" href="#">1</a>
+          <a class="links-paginacion" href="#">2</a>
+          <a class="links-paginacion" href="#">3</a>
+          <a class="links-paginacion" href="#">4</a>
+          <a class="links-paginacion" href="#">&raquo;</a>
         </div>
       </section>
-      <footer class="footer">
+
+      <footer>
         <p class="txt-footer">2024. Paper girl S.A. de C.V.</p>
       </footer>
     </main>
